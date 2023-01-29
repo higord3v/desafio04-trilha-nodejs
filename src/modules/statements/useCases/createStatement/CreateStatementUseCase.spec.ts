@@ -19,7 +19,7 @@ enum OperationType {
   WITHDRAW = 'withdraw',
 }
 
-describe("Get Balance Use Case", () => {
+describe("Create Statement", () => {
   beforeEach(async () => {
     usersRepository = new InMemoryUsersRepository();
     statementsRepository = new InMemoryStatementsRepository();
