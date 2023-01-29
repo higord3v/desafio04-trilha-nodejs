@@ -17,13 +17,13 @@ describe("Authenticate User Use Case", () => {
     createUserUseCase = new CreateUserUseCase(usersRepository);
     authenticateUserUseCase = new AuthenticateUserUseCase(usersRepository);
     user = await createUserUseCase.execute({
-      name: "teste",
+      name: "teste nome",
       email: "teste@teste.com",
       password: "password",
     });
   });
 
-  it("should be authenticate a user", async () => {
+  it("should be able to authenticate a user", async () => {
     const authUserDTO = {
       email: "teste@teste.com",
       password: "password",
