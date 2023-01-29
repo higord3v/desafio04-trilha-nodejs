@@ -10,7 +10,7 @@ let usersRepository: IUsersRepository;
 let showUserProfileUseCase: ShowUserProfileUseCase;
 let user, user_id: string;
 
-describe("Show User Profile Use Case", () => {
+describe("Show User's Profile Use Case", () => {
   beforeEach(async () => {
     usersRepository = new InMemoryUsersRepository();
     createUserUseCase = new CreateUserUseCase(usersRepository);
